@@ -16,7 +16,7 @@ int main()
 	int max = 7; // enter the max number here
 	
 
-	max++; //yeah, don't delete this. it makes the loops work without putting a +1 in all of them but still letting you directly enter the max number you want
+	max++; //makes the loops work without putting a +1 in all of them but still letting you directly enter the max number you want
 
 //Determine the total sample space	
 	for (hundred = min; hundred < max; hundred++)
@@ -41,12 +41,12 @@ int main()
 	cout << endl << "Count = " << count << endl << endl << endl; //print the final, correct count like the fully functioning program you are
 
 
-//Okay, now let's determine the count over a given value (520 in this case)
+//determine the count over a given value (520 in this case)
 	int value = 520; //value you want it to be more than
 	int countOverValue = 0;
 	int currentValue;//used for operation
 
-#pragma region Ugly nested for loops
+#pragma region Nested for loops
 	for (hundred = min; hundred < max; hundred++)
 	{
 
@@ -66,11 +66,11 @@ int main()
 				}
 			}
 		}
-		cout << endl; //print a space between the hundreds spot. Useful if you have an obnoxiously large screen, obnoxious if you have a uselessly small screen.
+		cout << endl; 
 
 	}
 
-	cout << endl << "Count over " << value << " = " << countOverValue << endl; //print the final, correct count like the fully functioning program you are
+	cout << endl << "Count over " << value << " = " << countOverValue << endl; //print the final, correct count
 	return 0;
 
 
